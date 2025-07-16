@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de Contato Trabalho1</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html" class="menu"> Pagina principal</a></li>
+                <li><a href="experiencia.html" class="menu">Experiência</a></li>
+                <li><a href="contato.html" class="menu">Contato</a></li>
+            </ul>   
+
+        </nav>
+
+
+        <form>
+
+            <fieldset>
+                <legend>Contato</legend>
+
+                <img src="images/AvatarCurriculo.jpg" class="avatar" alt="Avatar Curriculo" width="120" title="Foto Avatar Curriculo">
+
+                <div>
+                    <label for="nomePessoa">Nome:</label>
+                    <input type="text" id="nomePessoa" name="nomePessoa">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div>
+                    <label for="biografia">Biografia:</label>
+                    <textarea id="biografia" name="biografia"></textarea>
+                </div>
+            </fieldset>
+
+                <fieldset>
+                    <legend>Recrutador</legend>
+                    <label for="recrutador">Recrutador:</label>
+                    <select id="recrutadorSelect" name="recrutador">
+                        <option value="Sim">Sim</option>
+                        <option value="Não" selected>Não</option>
+                    </select>
+            </fieldset>
+
+
+            <button>Enviar</button>
+
+
+        </form>
+    </main>
+    <p></p>
+</body>
+
+</html>

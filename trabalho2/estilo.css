@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: azure;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    color: darkblue;
+    font-size: 20pt;
+}
+
+p{
+    margin: 20px;
+}
+
+.menu{
+    color: rgb(9, 85, 156);
+    font-weight: bold;
+}
+
+.avatar{
+    display: block;
+    margin: 0auto 12px auto;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+nav ul li a:hover, button:hover{
+    color: white;
+    background: blue;
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+/*Pelo menos 6 tipos diferentes de seletores a serem aplicados, sendo obrigatório
+que um deles seja do tipo classe e um outro do tipo pseudo-classe;
+• Utilize ao menos uma das seguintes propriedades em algum elemento: float,
+overflow, position.
+• Faça a validação do HTML e do CSS utilizando as ferramentas do W3C.*/
+
