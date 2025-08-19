@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Palavras-Chave</title>
+</head>
+<body>
+
+    <div>
+        <h2>Gerenciador de Palavras</h2>
+
+        <form id="form1">
+            <input type="text" id="palavraInput" placeholder="Digite uma palavra-chave">
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <ul id="listaPalavras">
+        </ul>
+
+    </div>
+
+    <script>
+
+        const formulario1 = document.getElementById('form1');
+        const palavraInput = document.getElementById('palavraInput');
+        const listaPalavras = document.getElementById('listaPalavras');
+    
+
+        formulario1.addEventListener('submit', function(e) {   // Adiciona um event listener para o envio do formulário
+            e.preventDefault(); // Previne a ação padrão do formulário (que seria recarregar a página)
+            addPalavraLista(palavraInput.value); //Executa função para adicionar a palavra na lista
+        });
+
+        
+        function addPalavraLista(palavra) {  
+            
+            const li = document.createElement('li');  // Cria um novo elemento de lista <li>
+ 
+            li.textContent = palavra + " "
+            const botao = document.createElement('button')
+            botao.textContent = "X"
+            botao.className = "remove-btn"
+            li.appendChild(botao)
+
+            //li.innerHTML = palavra + "<button class='remove-btn'>X</button>" //<img src="x" onerror="alert('Vulnerável a XSS!')">
+ 
+            listaPalavras.appendChild(li);  // Adiciona o <li> recém-criado na lista <ul>
+        }
+
+   
+        listaPalavras.addEventListener('click', function(evento) {      // Adiciona um event listener para remoção
+
+            if (evento.target.className='remove-btn') { // Verifica se o elemento clicado é um botão de remover           
+                const pai = evento.target.parentElement; 
+                listaPalavras.removeChild(pai);   // Remove o elemento pai do botão (o <li>) da lista
+            }
+        });
+
+    </script>
+
+</body>
+</html>

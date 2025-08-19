@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Revisão Dweb 1</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9buu" crossorigin="anonymous">
+
+    <!-- Seu CSS personalizado -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação Fixa e Responsiva (Exercício 1a) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Dweb 1 Revisão</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#exercicio1">Exercício 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#exercicio2">Exercício 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-5">
+
+        <!-- Seção Exercício 1: Página Simples com Bootstrap Grid -->
+        <section id="exercicio1" class="mb-5">
+            <h2 class="text-center mb-4">Exercício 1: Página com Bootstrap Grid</h2>
+            <p class="lead text-center">Criação de uma página simples com barra de navegação fixa, rodapé e 8 elementos organizados em um grid responsivo do Bootstrap.</p>
+
+            <div class="row">
+                <!-- Elemento 1 (col-12 para mobile, col-sm-6 para tablet, col-md-3 para desktop) -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/007bff/FFFFFF?text=Elemento+1" alt="Elemento 1">
+                        <h4>Título do Item 1</h4>
+                        <p>Este é um parágrafo de texto simples para ilustrar o conteúdo do primeiro elemento.</p>
+                    </div>
+                </div>
+                <!-- Elemento 2 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/28a745/FFFFFF?text=Elemento+2" alt="Elemento 2">
+                        <h4>Título do Item 2</h4>
+                        <p>Aqui temos mais conteúdo, demonstrando como os elementos se adaptam ao layout.</p>
+                    </div>
+                </div>
+                <!-- Elemento 3 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/ffc107/000000?text=Elemento+3" alt="Elemento 3">
+                        <h4>Título do Item 3</h4>
+                        <p>Podemos incluir números aqui: 12345. E até alguns caracteres especiais: @#$%</p>
+                    </div>
+                </div>
+                <!-- Elemento 4 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/dc3545/FFFFFF?text=Elemento+4" alt="Elemento 4">
+                        <h4>Título do Item 4</h4>
+                        <p>Este elemento representa a conclusão da primeira linha, com conteúdo variado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Elemento 5 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/6f42c1/FFFFFF?text=Elemento+5" alt="Elemento 5">
+                        <h4>Título do Item 5</h4>
+                        <p>Início da segunda linha, mostrando a flexibilidade do Grid do Bootstrap.</p>
+                    </div>
+                </div>
+                <!-- Elemento 6 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/fd7e14/FFFFFF?text=Elemento+6" alt="Elemento 6">
+                        <h4>Título do Item 6</h4>
+                        <p>Mais um exemplo de conteúdo dinâmico dentro de um elemento de grid padronizado.</p>
+                    </div>
+                </div>
+                <!-- Elemento 7 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/17a2b8/FFFFFF?text=Elemento+7" alt="Elemento 7">
+                        <h4>Título do Item 7</h4>
+                        <p>Imagens e texto se combinam para criar um visual atraente e informativo.</p>
+                    </div>
+                </div>
+                <!-- Elemento 8 -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="grid-element">
+                        <img src="https://via.placeholder.com/80/6c757d/FFFFFF?text=Elemento+8" alt="Elemento 8">
+                        <h4>Título do Item 8</h4>
+                        <p>O último elemento completa o grid de 8 itens, organizado em 2 linhas de 4.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- Seção Exercício 2: Formulário Estilizado com Bootstrap e JavaScript/jQuery -->
+        <section id="exercicio2" class="mb-5">
+            <h2 class="text-center mb-4">Exercício 2: Formulário com Validação</h2>
+            <p class="lead text-center">Criação de um formulário com diversos tipos de campos, botões de envio/cancelamento e validação via JavaScript/jQuery.</p>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <form id="myForm" class="p-4 border rounded shadow-sm">
+                        <div class="form-group">
+                            <label for="inputEmail">Endereço de E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="seu.email@exemplo.com" required>
+                            <small class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputDate">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="inputDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputNumber">Quantidade</label>
+                            <input type="number" class="form-control" id="inputNumber" placeholder="Digite um número" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputSelect">Selecione uma opção</label>
+                            <select class="form-control" id="inputSelect" required>
+                                <option value="">Selecione...</option>
+                                <option value="opcao1">Opção 1</option>
+                                <option value="opcao2">Opção 2</option>
+                                <option value="opcao3">Opção 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="inputCheckbox">
+                            <label class="form-check-label" for="inputCheckbox">Concordo com os termos e condições</label>
+                        </div>
+
+                        <div class="form-group custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="inputSwitch" required>
+                            <label class="custom-control-label" for="inputSwitch">Ativar funcionalidade</label>
+                            <small class="form-text text-muted">O formulário só será enviado se este switch estiver ativo.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mr-2" id="submitBtn">Enviar</button>
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                    </form>
+
+                    <!-- Mensagem de sucesso/erro (inicialmente oculta) -->
+                    <div id="successMessage" class="mt-3 alert-success-custom d-none">
+                        <!-- Mensagem será inserida aqui pelo JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Confirmação para Cancelar -->
+    <div class="modal fade" id="cancelModal" tabindex="-1" aria-labelledby="cancelModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelModalLabel">Confirmação de Cancelamento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Deseja cancelar? As informações preenchidas serão perdidas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não, Continuar</button>
+                    <button type="button" class="btn btn-danger" id="confirmCancelBtn">Sim, Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé (Exercício 1b) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Exercícios Dweb 1 - Universidade Federal de Uberlândia. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Izabela</p>
+        </div>
+    </footer>
+
+    <!-- jQuery primeiro, depois Popper.js, e então Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57B+Uj7QeE0gC1P2QzS6V6T+IuL5h0S5" crossorigin="anonymous"></script>
+
+    <!-- Seu JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

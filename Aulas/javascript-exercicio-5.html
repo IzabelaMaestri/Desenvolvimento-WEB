@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Palavras-Chave</title>
+
+</head>
+<body>
+
+    <div>
+
+        <h2>Painel de Login</h2>
+
+        <form id="form1">
+            <div id="divuser">
+            <input type="text" id="usuario" placeholder="Digite o usuário">
+            </div>
+            <div id="divpass">
+            <input type="password" id="senha" placeholder="Digite a senha">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    
+
+    </div>
+
+    <script>
+
+    const formulario1 = document.getElementById('form1')
+    const campoUser = document.getElementById('usuario')
+    const campoPass = document.getElementById('senha')
+    const divuser = document.getElementById('divuser')
+    const divpass = document.getElementById('divpass')
+
+    formulario1.addEventListener('submit',function(e){
+
+        e.preventDefault()
+
+
+        if (campoUser.value==='' && divuser.childElementCount===1) {
+            campoUser.style.borderColor = 'red'
+            
+            const erro = document.createElement('p')
+            erro.textContent = `O campo usuário deve ser preenchido`
+            erro.style.color = 'red'
+            
+            divuser.appendChild(erro)
+        }
+        if (campoUser.value!=='' && divuser.childElementCount>1) {
+            campoUser.style.borderColor = 'black'
+            divuser.lastElementChild.remove()
+        } 
+
+        if (campoPass.value==='' && divpass.childElementCount===1) {
+            campoPass.style.borderColor = 'red'    
+            const erro = document.createElement('p')
+            erro.textContent = `O campo "${campoPass.id}" deve ser preenchido`
+            erro.style.color = 'red'
+            
+            divpass.appendChild(erro)
+        } 
+        if (campoPass.value!=='' && divpass.childElementCount>1) {
+            campoPass.style.borderColor = 'black'
+            divpass.lastElementChild.remove()
+        } 
+             
+        
+    
+
+    })
+
+
+
+
+
+    </script>
+
+</body>
+</html>

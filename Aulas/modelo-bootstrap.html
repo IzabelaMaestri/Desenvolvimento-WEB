@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Revisão para Prova 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+      /* Estilo simples para o footer grudar na parte de baixo */
+      body { 
+        display: flex; 
+        flex-direction: column; 
+        min-height: 100vh; 
+        }
+      main { 
+        flex-grow: 1;
+        padding-top: 1.5rem; 
+        }
+    </style>
+
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Revisão Web</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="#">Início</a>
+                    <a class="nav-link" href="#">Tópico 1</a>
+                    <a class="nav-link" href="#">Tópico 2</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+
+        <div class="row">
+            <div class="col-12 col-sm-8">
+                <h2>Conteúdo Principal</h2>
+                <p>Aqui colocaremos nosso formulário e os botões de interação.</p>
+                
+                <h3 class="mt-4">Formulário de Contato</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Seu E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label">Sua Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="bg-light p-3 rounded">
+                    <h4>Barra Lateral</h4>
+                    <p>Informações secundárias, links, etc.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 - Revisão de Desenvolvimento Web I. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      
+
+    </script>
+
+  </body>
+</html>
